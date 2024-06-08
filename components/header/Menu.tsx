@@ -1,9 +1,9 @@
 'use client'
-import useCartService from "@/lib/hooks/useCartStore"
+import { useCartStore } from "@/lib/hooks/useCartStore"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 const Menu = () => {
-    const { items } = useCartService();
+    const { items } = useCartStore(state => state);
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
