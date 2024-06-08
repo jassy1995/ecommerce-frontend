@@ -1,9 +1,9 @@
-import { Product } from '@/lib/models/product-model'
+import { Product } from '@/lib/models/productModel'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function productItem({ product }: { product: Product }) {
+export default function ProductItem({ product }: { product: Product }) {
     return (
         <div className='card bg-base-300 shadow-xl mb-4'>
             <figure>
